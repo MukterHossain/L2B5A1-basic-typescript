@@ -1,3 +1,4 @@
+# Blog-1
 # Difference Between Interfaces and Ypes in TypeScript 
 In TypeScript, both `interface` and `type` are used to describe the shape of an object. There ar important difference between them that can impact how and when you use each. Here are the main differences:
 
@@ -28,3 +29,52 @@ Type Person2 ={
 
 ### Conclusion 
 * Interface and Type are both powerfull tools in TypeSscript. Sellect the right one depends on the specific needs of your codebe.
+
+
+
+
+
+
+# Blog-2
+# Explain the difference between any, unknown, and never types in TypeScript. 
+
+TypeScript provides powerfull type system that help developer catch bugs easily. Here are the types: `any`, `unknown`, and `never`. 
+
+## any 
+* The `any` type disables TypeScript's type checking for a vaiable.  
+
+
+### Example 
+
+ let data:any = 'Hello World!!';
+ data = 50 ;
+ data.toUpperCase();
+
+
+
+## unknown 
+* The `unknown` is like any but it is safer. developer must check the type before using the value  
+
+
+### Example 
+
+ let input:unknown = 'Hello World!!';
+if(typeof input === 'string'){
+    console.log(input.toLowerCase());
+}
+
+
+
+## never
+* The `never` type represents values that never occur usually in functions that throw error. used when a function never returns.
+
+
+### Example 
+
+function throwError():never{
+    throw new Error('Something went wrong!')
+}
+
+
+### Conclusion 
+* Developers write safer and more predictable ts code by using `any`, `unknown`, and `never` types. 

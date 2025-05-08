@@ -9,14 +9,14 @@
             return input.toLowerCase()
         }
    }
-//    const result = formatString("hello")
-//    const result = formatString("hello", true)
-//    const result = formatString("hello", false)
-
-//    console.log(result)
+// formatString("hello")
+// formatString("hello", true)
+// formatString("hello", false)
 
 
-    // problem 2
+
+
+
    function filterByRating(items: {title:string, rating:number}[]): {title:string, rating:number}[]{
      return items.filter(item => item.rating >=4.0)
    }
@@ -27,20 +27,21 @@
     {title:'Book C', rating:5.0},
    ]
 
-//    console.log(filterByRating(books))
+// filterByRating(books) 
 
 
-   // problem 3
+
+
    function contatenateArrays<T>(...arrays:T[][]):T[]{
     return arrays.reduce((acc, array)=> acc.concat(array),[])
    }
 
-//    console.log(contatenateArrays(['a', 'b'], ['c']))
-//    console.log(contatenateArrays([1, 2], [3, 4], [5]))
+// contatenateArrays(['a', 'b'], ['c'])
+// contatenateArrays([1, 2], [3, 4], [5])
 
 
 
- // problem 4
+
  class Vehicle{
     make:string;
     year:number;
@@ -54,7 +55,6 @@
     }
 
  }
-
  class Car extends Vehicle{
     private model: string;
     constructor(make:string, year:number, model:string){
@@ -68,12 +68,12 @@
  }
 
  const myCar = new Car("Toyota", 2020, "Corolla")
- console.log(myCar.getInfo())
- console.log(myCar.getModel())
+// myCar.getInfo()
+//  myCar.getModel()
  
 
 
- // problem 5
+
  function processValue(value:string |number):number{
     if(typeof value === 'string'){
         return value.length
@@ -82,12 +82,12 @@
     }
  }
  
-//  console.log(processValue("hello"))
-//  console.log(processValue(10))
+// processValue("hello")
+// processValue(10)
 
 
 
- // problem 6
+
  interface Product{
     name:string;
     price:number;
@@ -105,10 +105,10 @@
     {name: "Bag", price: 50},
  ]
 
-//  console.log(getMostExpensiveProduct(products))
+//  getMostExpensiveProduct(products)
 
 
- // problem 7
+
  enum Day{
     Monday,
     Tuesday,
@@ -131,15 +131,14 @@
 
  }
 
-//  console.log(getDayType(Day.Monday))
-//  console.log(getDayType(Day.Sunday))
-//  console.log(getDayType(Day.Friday))
-//  console.log(getDayType(Day.Saturday))
-//  console.log(getDayType(Day.Wednesday))
+//  getDayType(Day.Monday)
+//  getDayType(Day.Sunday)
+//  Day.Friday)
 
 
 
-// probem 8
+
+
 
 async function squareAsync(n:number):Promise<number>{
     return new Promise((resolve, reject) =>{
@@ -154,7 +153,7 @@ async function squareAsync(n:number):Promise<number>{
     })
 } 
 
-squareAsync(4).then((result => console.log(result)))
+// squareAsync(4).then(())
 
 
 
@@ -165,19 +164,5 @@ squareAsync(4).then((result => console.log(result)))
 
 
 
-
-
-   
-   
-
-
-
-
-
-
-
-
-
-
-   //
+//
 }
